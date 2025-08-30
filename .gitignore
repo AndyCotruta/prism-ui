@@ -1,0 +1,51 @@
+# Build outputs
+bin/
+obj/
+dist/
+build/
+out/
+
+# Dependencies
+node_modules/
+.pnp/
+.pnp.js
+
+# IDE files
+.vs/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Package files
+*.tgz
+*.tar.gz
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+
+# Temporary folders
+tmp/
+temp/

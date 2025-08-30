@@ -1,0 +1,23 @@
+<Project>
+  <PropertyGroup>
+    <!-- Package Information -->
+    <VersionPrefix>0.0.1</VersionPrefix>
+    <VersionSuffix>alpha.1</VersionSuffix>
+    <PackageVersion>$(VersionPrefix)-$(VersionSuffix)</PackageVersion>
+    
+    <!-- .NET Settings -->
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    
+    <!-- Package Metadata -->
+    <Authors>Andy-Aristide Cotruta</Authors>
+    <Company>Prism UI</Company>
+    <Product>Prism Design System</Product>
+    <Description>A modern, cross-framework design system built with Material You principles</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/AndyCotruta/prism-ui</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/AndyCotruta/prism-ui</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+  </PropertyGroup>
+</Project>

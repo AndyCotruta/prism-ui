@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "packages", "packages", "{5B6E5561-BD1C-46E1-8DE4-54EF7CA93286}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "blazor", "blazor", "{113FBAAB-3BDD-4333-AF04-4709BCAFEB6C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4E4A7263-FB32-45C7-8D95-595E463CA47E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prism.Blazor", "packages\blazor\src\Prism.Blazor\Prism.Blazor.csproj", "{F42B42F0-00E9-4D2A-AB14-9E7B03AC0CE7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{B1AD614C-AA7C-4682-B7F1-D71914FBE26F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prism.Blazor.Tests", "packages\blazor\tests\Prism.Blazor.Tests\Prism.Blazor.Tests.csproj", "{0D6BEE24-CCCF-4EC3-8246-28CB463DCAE3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "apps", "apps", "{63806FB6-17D4-4EC2-BC36-961001B13F17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prism.Demo.Server", "apps\blazor-demo-server\Prism.Demo.Server.csproj", "{2AAB3C09-56B7-44A1-9E2A-FADDE6453F65}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prism.Demo.Wasm", "apps\blazor-demo-wasm\Prism.Demo.Wasm.csproj", "{093F519C-0310-4CCC-AE03-304451FBC144}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F42B42F0-00E9-4D2A-AB14-9E7B03AC0CE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F42B42F0-00E9-4D2A-AB14-9E7B03AC0CE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F42B42F0-00E9-4D2A-AB14-9E7B03AC0CE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F42B42F0-00E9-4D2A-AB14-9E7B03AC0CE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D6BEE24-CCCF-4EC3-8246-28CB463DCAE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D6BEE24-CCCF-4EC3-8246-28CB463DCAE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D6BEE24-CCCF-4EC3-8246-28CB463DCAE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D6BEE24-CCCF-4EC3-8246-28CB463DCAE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AAB3C09-56B7-44A1-9E2A-FADDE6453F65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AAB3C09-56B7-44A1-9E2A-FADDE6453F65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AAB3C09-56B7-44A1-9E2A-FADDE6453F65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AAB3C09-56B7-44A1-9E2A-FADDE6453F65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{093F519C-0310-4CCC-AE03-304451FBC144}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{093F519C-0310-4CCC-AE03-304451FBC144}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{093F519C-0310-4CCC-AE03-304451FBC144}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{093F519C-0310-4CCC-AE03-304451FBC144}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{113FBAAB-3BDD-4333-AF04-4709BCAFEB6C} = {5B6E5561-BD1C-46E1-8DE4-54EF7CA93286}
+		{4E4A7263-FB32-45C7-8D95-595E463CA47E} = {113FBAAB-3BDD-4333-AF04-4709BCAFEB6C}
+		{F42B42F0-00E9-4D2A-AB14-9E7B03AC0CE7} = {4E4A7263-FB32-45C7-8D95-595E463CA47E}
+		{B1AD614C-AA7C-4682-B7F1-D71914FBE26F} = {113FBAAB-3BDD-4333-AF04-4709BCAFEB6C}
+		{0D6BEE24-CCCF-4EC3-8246-28CB463DCAE3} = {B1AD614C-AA7C-4682-B7F1-D71914FBE26F}
+		{2AAB3C09-56B7-44A1-9E2A-FADDE6453F65} = {63806FB6-17D4-4EC2-BC36-961001B13F17}
+		{093F519C-0310-4CCC-AE03-304451FBC144} = {63806FB6-17D4-4EC2-BC36-961001B13F17}
+	EndGlobalSection
+EndGlobal
