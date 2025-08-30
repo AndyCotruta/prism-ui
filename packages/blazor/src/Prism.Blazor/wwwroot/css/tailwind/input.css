@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme {
+  /* Material Design color system - fallback values, will be overridden by JS */
+  --color-primary: #3b82f6;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #dbeafe;
+  --color-on-primary-container: #1e3a8a;
+  --color-secondary: #6b7280;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #e5e7eb;
+  --color-on-secondary-container: #374151;
+  --color-tertiary: #ec4899;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #fce7f3;
+  --color-on-tertiary-container: #831843;
+  --color-error: #ef4444;
+  --color-on-error: #ffffff;
+  --color-error-container: #fef2f2;
+  --color-on-error-container: #991b1b;
+  --color-background: #ffffff;
+  --color-on-background: #111827;
+  --color-surface: #ffffff;
+  --color-on-surface: #111827;
+  --color-outline: #6b7280;
+}

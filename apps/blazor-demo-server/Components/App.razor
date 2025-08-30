@@ -7,11 +7,12 @@
     <base href="/" />
     <link rel="stylesheet" href="app.css" />
     <link rel="stylesheet" href="Prism.Demo.Server.styles.css" />
+    <link href="_content/Prism.Blazor/css/tailwind/output.css" rel="stylesheet" />
     <HeadOutlet />
 </head>
 
 <body>
-    <Routes />
+    <Routes @rendermode="InteractiveServer"/>
     <script src="_framework/blazor.web.js"></script>
 </body>
 

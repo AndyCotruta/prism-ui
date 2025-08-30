@@ -1,9 +1,53 @@
 ﻿@inherits LayoutComponentBase
 
-@Body
+<PrismThemeProvider PrimaryColor="@currentColor" DarkMode="@isDarkMode">
+    <div class="page">
+        <header style="padding: 20px; background: var(--color-surface-variant); border-bottom: 1px solid var(--color-outline);">
+            <h1 style="color: var(--color-on-surface); margin: 0 0 20px 0;">EuroBlaze Component Library Demo</h1>
+            
+            <div style="display: flex; gap: 20px; align-items: center;">
+                <div>
+                    <label style="display: block; margin-bottom: 5px; color: var(--color-on-surface-variant); font-size: 14px;">Primary Color:</label>
+                    <input type="color" 
+                           value="@currentColor" 
+                           @onchange="OnColorChanged"
+                           style="width: 50px; height: 40px; border: 1px solid var(--color-outline); border-radius: 4px; cursor: pointer;" />
+                </div>
+                
+                <div>
+                    <label style="display: block; margin-bottom: 5px; color: var(--color-on-surface-variant); font-size: 14px;">Theme:</label>
+                    <button @onclick="ToggleDarkMode" 
+                            style="padding: 10px 16px; background: var(--color-primary); color: var(--color-on-primary); border: none; border-radius: 4px; cursor: pointer;">
+                        @(isDarkMode ? "Light Mode" : "Dark Mode")
+                    </button>
+                </div>
+                
+                <div style="margin-left: auto; font-size: 12px; color: var(--color-on-surface-variant);">
+                    <div>Color: @currentColor</div>
+                    <div>Mode: @(isDarkMode ? "Dark" : "Light")</div>
+                </div>
+            </div>
+        </header>
+        
+        <main style="padding: 20px; background: var(--color-background); color: var(--color-on-background); min-height: calc(100vh - 155px);">
+            @Body
+        </main>
+    </div>
+</PrismThemeProvider>
 
-<div id="blazor-error-ui">
-    An unhandled error has occurred.
-    <a href="" class="reload">Reload</a>
-    <a class="dismiss">🗙</a>
-</div>
+@code {
+    private string currentColor = "#540cfc";
+    private bool isDarkMode = false;
+
+    private void OnColorChanged(ChangeEventArgs e)
+    {
+        currentColor = e.Value?.ToString() ?? "#540cfc";
+        StateHasChanged();
+    }
+
+    private void ToggleDarkMode()
+    {
+        isDarkMode = !isDarkMode;
+        StateHasChanged();
+    }
+}

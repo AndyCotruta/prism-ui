@@ -1,0 +1,8 @@
+@implements IAsyncDisposable
+
+<div class="euro-theme-container" style="@(_isThemeReady ? "" : "visibility: hidden;")">
+    <CascadingValue Value="this">
+        @ChildContent
+    </CascadingValue>
+</div>
+
